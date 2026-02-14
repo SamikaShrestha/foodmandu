@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!-- =======================Header Start===================== -->
     <header>
-        <div class="nav">
+        <nav class="nav">
             <div class="logo-box">
-                <img src="./img/foodmandu (2).png" alt="img" class="logo">    
+                <img src="../img/foodmandu (2).png" alt="img" class="logo">    
             </div>
             <div class="head-search">
             <input type="text" placeholder="Restaurant name or cuisine" class="product-search"> 
@@ -22,17 +25,17 @@
                 <i class="fa-solid fa-user"></i>
                 <i class="fa-solid fa-bag-shopping"></i>
             </div>
-            <button class="nav-btn">Login</button>
-        </div>
+            <a href="./login.html" class="nav-btn">Login</a>
+        </nav>
     </header>
     <!-- ==========================Main starts======================== -->
     <main>
         <section>
             <div class="top-container">
-                <img src="./img/second page background.jpg" alt="img" class="second-background">
+                <img src="../img/second page background.jpg" alt="img" class="second-background">
                 <div class="black-container"></div>
                 <div class="top-heading">
-                    <img src="./img/fire and ice logo.jpg" alt="img">
+                    <img src="../img/fire and ice logo.jpg" alt="img">
                     <div class="top-detail">
                         <h1 class="restro-heading">Fire And Ice Pizzeria - Thamel</h1>
                         <p class="list-item"><i class="fa-solid fa-bowl-food" style="color:black"></i>Italian</p>
@@ -46,16 +49,19 @@
             </div>    
         </section>
         <section class="remaining2">
-            <ul class="menu-bar">
-                <li class="name">Menu</li>
-                <li class="name">About</li>
-                <li class="name">Other Branches</li>
-            </ul>
-            <div class="heart">
-                <i class="fa-regular fa-heart"></i>
-            </div>
+            <nav class="second-nav">
+                <ul class="menu-bar">
+                    <li class="name">Menu</li>
+                    <li class="name">About</li>
+                    <li class="name">Other Branches</li>
+                </ul>
+                <div class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </nav>    
         </section>
         <hr class="line">
+        <!-- ==================Aside bar startt========================= -->
         <aside class="sidebar">
         <h3 class="categories"><i class="fa-solid fa-fire" id="cate-icon"></i>Categories</h3>
         <hr class="cate-line">
@@ -73,6 +79,7 @@
             </ul>
         </aside>
         <hr class="slideline">
+        <!-- =====================Aside bar end======================== -->
         <div class="product">
             <input type="text" class="dish-search" placeholder="Search Food Items..">
             <div class="search-square">
@@ -83,7 +90,7 @@
             <div class="pizz-heading">Signature Pizza</div>
             <div class="firepizz-card">
                 <div class="fireimg">
-                    <img src="./img/paesana pizza.jpg" alt="img" class="pizz-img">
+                    <img src="../img/paesana pizza.jpg" alt="img" class="pizz-img">
                 </div>  
                 <hr class="card-spacer">
                 <div class="card-info">
@@ -98,7 +105,7 @@
             </div> 
             <div class="firepizz-card">
                 <div class="fireimg">
-                    <img src="./img/magherita pizza.jpg" alt="img" class="pizz-img">
+                    <img src="../img/magherita pizza.jpg" alt="img" class="pizz-img">
                 </div>  
                 <hr class="card-spacer">
                 <div class="card-info">
@@ -113,7 +120,7 @@
             </div>
             <div class="firepizz-card">
                 <div class="fireimg">
-                    <img src="./img/la ciccia pizza.jpg" alt="img" class="pizz-img">
+                    <img src="../img/la ciccia pizza.jpg" alt="img" class="pizz-img">
                 </div>  
                 <hr class="card-spacer">
                 <div class="card-info">
@@ -128,10 +135,11 @@
                 </div> 
             </div>
         </section>
+        <!-- ==================Aside bar==================== -->
         <aside class="bag">
             <p class="mybag">My Bag</p>
             <div class="bag-box">
-                <img src="./img/vecteezy_spoon-fork-and-knife-icon-set-on-transparent-background_21013502.png" alt="img" class="bag-img">
+                <img src="../img/vecteezy_spoon-fork-and-knife-icon-set-on-transparent-background_21013502.png" alt="img" class="bag-img">
                 <p class="bag-text">Your bag is empty</p>
             </div>
         </aside>
@@ -147,7 +155,7 @@
             </ul>
             <br><br>
             <p class="down-head">Service Hours:</p>
-            <li>07:00 AM to 12:00 AM (NST)</li>
+            <p>07:00 AM to 12:00 AM (NST)</p>
         </div>
         <div class="info-box">
             <p class="down-head">Get Help</p>
@@ -159,9 +167,11 @@
         </div>
         <div class="info-box">
             <p class="down-head">Call Us</p>
-            <li><p>Our helpline stays the same across 
-            Kathmandu, Bhaktapur, Chitwan, and 
-            Butwal for seamless support.</p></li>
+                <ul>
+                <li><p>Our helpline stays the same across 
+                Kathmandu, Bhaktapur, Chitwan, and 
+                Butwal for seamless support.</p></li>
+            </ul>
         </div>
         <div class="info-box">
             <p class="down-head">Contact Details</p>
@@ -172,8 +182,10 @@
         </div>
         <div class="info-box">
             <p class="down-head">Download App</p>
-            <li>-Appstore</li>
-            <li>-Playstore</li>
+            <ul>
+                <li>-Appstore</li>
+                <li>-Playstore</li>
+            </ul>
             <div class="app">
             </div>
             <br><br>

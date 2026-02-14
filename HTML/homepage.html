@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <!-- ========================Header start========================== -->
     <header>
-        <div class="nav">
+        <nav class="nav">
             <div class="logo-box">
-                <img src="./img/foodmandu (2).png" alt="img" class="logo">    
+                <img src="../img/foodmandu (2).png" alt="img" class="logo">    
             </div>
             <div class="home">
                 <i class="fa-solid fa-house"></i>
                 <h3>Home</h3>
             </div>
-                <button class="nav-btn">Login</button>
-        </div>
+            <a href="./login.html" class="nav-btn">Login</a>
+        </nav>
     </header>
     <!-- =======================Main start========================= -->
     <main>
         <section class="first">
-                <img src="./img/final background.jpg" alt="" class="main-background">
+                <img src="../img/final background.jpg" alt="" class="main-background">
                 <div class="front-content">
                     <div class="front-line">
                         <h1 class="front-description">Order food from the widest range of restaurants.</h1>
@@ -43,67 +46,67 @@
             <br>
             <div class="restro-cards">
                 <a href="./productpage.html" target="_blank">
-                <div class="card">
-                    <img src="./img/fire and piz.png" alt="img" class="card-img">
+                <article class="card">
+                    <img src="../img/fire and piz.png" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">Fire And Pizzeria-</p>
                         <p class="card-place">Thamel</p>
                     </div>
-                </div></a>
-                <div class="card">
-                    <img src="./img/worshop.png" alt="img" class="card-img">
+                </article></a>
+                <article class="card">
+                    <img src="../img/worshop.png" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">The Workshop Eatery-</p>
                         <p class="card-place">Bhakhundole</p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/koko.png" alt="img" class="card-img">
+                </article>
+                <article class="card">
+                    <img src="../img/koko.png" alt="img" class="card-img">
                     <div class="inner-content">
                     <p class="card-name">Koto Restaurants-</p>
                     <p class="card-place">Durbarmarg</p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/a cafe.png" alt="img" class="card-img">
+                </article>
+                <article class="card">
+                    <img src="../img/a cafe.png" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">A Cafe-</p>
                         <p class="card-place">Anamnagar</p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/osaka.png" alt="img" class="card-img">
+                </article>
+                <article class="card">
+                    <img src="../img/osaka.png" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">Osaka Restaurant-</p>
                         <p class="card-place">Sorakhutte</p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/burger.jpg" alt="img" class="card-img">
+                </article>
+                <article class="card">
+                    <img src="../img/burger.jpg" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">Burger Shack-</p>
                         <p class="card-place">Kamaladi</p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/4 corners.png" alt="img" class="card-img">
+                </article>
+                <article class="card">
+                    <img src="../img/4 corners.png" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">4 corners-</p>
                         <p class="card-place">Sanepa</p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="./img/shandar.jpg" alt="img" class="card-img">
+                </article>
+                <article class="card">
+                    <img src="../img/shandar.jpg" alt="img" class="card-img">
                     <div class="inner-content">
                         <p class="card-name">Shandar Momo-</p>
                         <p class="card-place">Durbarmarg</p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
         <section class="third">
             <div class="about-page">
-                <img src="./img/sushi background.webp" alt="img" class="about-img">
+                <img src="../img/sushi background.webp" alt="img" class="about-img">
                 <div class="black-shadow"></div>
                 <div class="aboutus">
                     <p class="about-head">About Us</p>
@@ -132,7 +135,7 @@
             </ul>
             <br><br>
             <p class="down-head">Service Hours:</p>
-            <li>07:00 AM to 12:00 AM (NST)</li>
+            <p>07:00 AM to 12:00 AM (NST)</p>
         </div>
         <div class="info-box">
             <p class="down-head">Get Help</p>
@@ -144,9 +147,11 @@
         </div>
         <div class="info-box">
             <p class="down-head">Call Us</p>
-            <li><p>Our helpline stays the same across 
-            Kathmandu, Bhaktapur, Chitwan, and 
-            Butwal for seamless support.</p></li>
+            <ul>
+                <li><p>Our helpline stays the same across 
+                Kathmandu, Bhaktapur, Chitwan, and 
+                Butwal for seamless support.</p></li>
+            </ul>
         </div>
         <div class="info-box">
             <p class="down-head">Contact Details</p>
@@ -157,8 +162,10 @@
         </div>
         <div class="info-box">
             <p class="down-head">Download App</p>
-            <li>-Appstore</li>
-            <li>-Playstore</li>
+            <ul>
+                <li>-Appstore</li>
+                <li>-Playstore</li>
+            </ul>
             <div class="app">
             </div>
             <br><br>
