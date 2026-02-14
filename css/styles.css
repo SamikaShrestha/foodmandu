@@ -314,8 +314,10 @@
 .heart{
     position: absolute;
     right: 200px;
+    top: 585px;
     border: 1.5px solid black;
     padding: 6px 20px 5px 20px;
+
 }
 .name{
     font-size: 19px;
