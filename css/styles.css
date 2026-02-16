@@ -125,11 +125,10 @@
     margin-left: 80px;
 }
 .restro-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-left: 65px;
 }
 .card{
     height: 270px;
@@ -212,9 +211,9 @@
     border: none;
 }
 .down{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
-    height: 270px;
     margin-top: 50px;
 }
 .download-img{
@@ -224,7 +223,8 @@
 .info-box{
     width: 250px;
     margin-top: 50px;
-    margin-left: 80px;
+    margin-left: 60px;
+    padding-bottom: 30px;
 }
 .info-box li{
     list-style-type: none;
@@ -238,6 +238,102 @@
     text-decoration: none;
     color: black;
 }
+@media (max-width: 600px) {
+
+    /* Keep logo left & login right */
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    /* Hide Home section */
+    .home {
+        display: none;
+    }
+
+    /* Adjust logo size */
+    .logo {
+        width: 150px;
+        height: 120px;
+    }
+
+    /* Adjust login button */
+    .nav-btn {
+        padding: 6px 16px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* ============Main back============= */
+    .first{
+        flex-direction: column;
+        height: 550px;
+    }
+    .front-description {
+        font-size: 18px;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .front-content{
+        margin-left: 140px;
+        padding-right: 50px;
+    }
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .search-box {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .main-background{
+        width: 100%;
+        height: 550px;
+        background-image: url("/img/frontbackgroundmediaquery.jpg");
+        position: absolute;
+    }
+    .search-btn {
+        width: 80%;
+        margin-top: 45px;
+        font-size: 14px;
+    }
+
+    /* ==============Restaurant cards=============== */
+    .restro-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* ===============About section============= */
+    .about-img{
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+    .black-shadow{
+        margin-left: 0px;
+    }
+    .about-head{
+        position: static;
+        order: 2;
+    }
+    /*============== Footer=============== */
+    .down {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+} 
+
 /* ===================Second Product Page Start================== */
 .product-search{
     padding: 2px 14px;
