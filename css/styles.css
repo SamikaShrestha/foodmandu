@@ -38,7 +38,7 @@
     margin-right: 400px;
 }
 .nav-btn{
-    padding: 8px 30px;
+    padding:  7px 30px;
     color: white;
     background-color: var(--primary-black);
     border-radius: 20px;
@@ -49,6 +49,10 @@
     font-size: 17px;
     margin-right: 35px;
     text-decoration: none;
+}
+.nav-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 .first {
     position: relative;
@@ -127,7 +131,6 @@
 .restro-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
     margin-left: 65px;
 }
 .card{
@@ -139,6 +142,10 @@
     border-radius: 20px;
     border-bottom: 2px solid black;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 .card-img{
     height: 180px;
@@ -209,6 +216,10 @@
     height: 40px;
     padding: 0 25px;
     border: none;
+}
+.about-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 .down-section{
     display: grid;
@@ -753,9 +764,12 @@
     height: 120px;
     width: 280px;
 }
-.burgerlogin{
+.burger-img{
     height: 400px;
     width: 400px;
+}
+.burger-img:hover{
+    transform: scale(1.08);
 }
 .craving{
     text-align: center;
@@ -795,6 +809,7 @@
     cursor:pointer;
     border: none;
     font-size: 30px;
+    text-decoration: none;
 }
 .email-title , .password-title{
     display:block;
@@ -815,11 +830,16 @@
     width:100%;
     padding:15px;
     background:#3c3c3c;
-    color:#FFD600;
+    color: white;
     border:none;
     font-size:20px;
     cursor:pointer;
     margin-bottom:15px;
+    border-radius: 30px;
+}
+.login-btn:hover{
+    background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
+    color: black;
 }
 .forgot{
     text-align:center;
