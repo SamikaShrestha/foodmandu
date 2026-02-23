@@ -19,27 +19,28 @@
                 <p class="craving">Craving Something??</p>
             </div>
             <div class="right-section">
-                <form class="login-box">
+                <form class="login-box" onsubmit="return validateLogin()">
                     <a href="./index.html" class="close-btn">&times;</a>
                     <h1 class="login-head">Login To Foodmandu</h1>
                     <hr>
 
                     <label class="email-title">Email Address:</label>
-                    <input type="text" placeholder="Enter email" class="email">
+                    <input type="text" placeholder="Enter email" class="email" id="email">
 
                     <label class="password-title">Enter Password:</label>
-                    <input type="password" placeholder="Enter password" class="password">
+                    <input type="password" placeholder="Enter password" class="password" id="password">
 
                     <div class="remember">
                         <input type="checkbox"> Remember Me
                     </div>
 
-                    <button class="login-btn">Login</button>
+                    <button type="button" class="login-btn" onclick="validateLogin()">Login</button>
 
                     <div class="forgot">Forgot password?</div>
                 </form>
             </div>
         </section>
     </main>
+<script src="./javascript/login.js"></script>    
 </body>
 </html>

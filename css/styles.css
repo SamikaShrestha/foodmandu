@@ -88,7 +88,11 @@
     text-align: right;  
 }
 .front-description{
-    font-size: 30px;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    text-align: center;
     margin-right: 20px;
 }
 .second{
@@ -282,18 +286,51 @@
     }
 
     /* ===============About section============= */
+    .about-page{
+        position: relative;
+    }
+
     .about-img{
         width: 100%;
-        height: auto;
-        margin-left: 0px;
+        height: 300px;   /* adjust height for phone */
+        margin: 0;
+        object-fit: cover;
     }
+
     .black-shadow{
-        margin-left: 0px;
+        width: 100%;
+        height: 300px;
+        margin: 0;
     }
+
+    .aboutus{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        text-align: center;
+        color: white;
+    }
+
     .about-head{
-        position: static;
-        order: 2;
+        font-size: 22px;
     }
+
+    .about-desc{
+        font-size: 12px;
+        width: auto;
+    }
+
+    .about-btn{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+}
     /*============== Footer=============== */
     .down-section {
         grid-template-columns: 1fr;
@@ -302,8 +339,6 @@
     .info-box{
         margin-left: 90px;
     }
-
-} 
 
 /* ===================Second Product Page Start================== */
 .product-search{
@@ -473,10 +508,6 @@
     border-top-right-radius: 20px ;
     border-bottom-left-radius: 20px;
 }
-.firepizz-card:hover {
-    transform: scale(1.07);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-}
 .pizz-img{
     width: 270px;
     height: 160px;
@@ -516,6 +547,10 @@
     border-radius: 20px;
     padding: 10px 25px;
     font-size: 14px;
+}
+.addtobag:hover{
+    transform: scale(1.07);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 .bag{
     position: absolute;
