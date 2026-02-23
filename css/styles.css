@@ -17,7 +17,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
-
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
 }
 .logo-box{
     display: flex;
@@ -54,7 +60,7 @@
     transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-.first {
+.banner-section {
     position: relative;
     width: 100%;
     height: 100vh; 
@@ -84,41 +90,6 @@
 .front-description{
     font-size: 30px;
     margin-right: 20px;
-}
-.search-container {
-    position: relative;
-    width: 670px;
-}
-
-.search-box {
-    height: 33px;
-    width: 100%;
-    border-radius: 20px;
-    padding-right: 160px; 
-    border: none;
-    outline: none;
-    background-color: #F2EAEA;
-}
-.search-btn {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-
-    height: 33px;
-    padding: 8px 30px;
-
-    color: black;
-    background: linear-gradient(
-        to right,
-        var(--primary-yellow),
-        var(--primary-orange)
-    );
-    border-radius: 20px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
 }
 .second{
     margin-top: 50px;
@@ -281,7 +252,7 @@
         justify-content: center;
     }
     /* ============Main back============= */
-    .first{
+    .banner-section{
         flex-direction: column;
         height: 550px;
     }
@@ -324,7 +295,7 @@
         order: 2;
     }
     /*============== Footer=============== */
-    .down {
+    .down-section {
         grid-template-columns: 1fr;
         text-align: center;
     }
