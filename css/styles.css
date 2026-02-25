@@ -9,6 +9,9 @@
     box-sizing: border-box;
     font-family: "Judson";
 }
+body{
+    height: 100%;
+}
 .nav{
     background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
     height: 60px;
@@ -151,7 +154,7 @@
 }
 .about-img{
     height: 670px;
-    width: 1350px;
+    width: 1360px;
     margin-left: 80px;
     object-fit: cover;
 }
@@ -165,7 +168,7 @@
     max-width: 500px;
 }
 .black-shadow {
-    width: 1350px;
+    width: 1360px;
     height: 670px;
     margin-left: 80px;
     position: absolute;
@@ -197,148 +200,37 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 .down-section{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 100%;
-    flex-direction: row;
+    display: flex;
     background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
+    width: 100%;
     margin-top: 50px;
-}
-.download-img{
-    height:110px;
-    width: 220px;
+    gap: 40px;
+    padding-left: 90px;
 }
 .info-box{
     width: 250px;
-    margin-top: 50px;
-    padding-bottom: 30px;
-    padding-left:60px;
+    margin: 30px 0px;
 }
 .info-box li{
     list-style-type: none;
     color: black;
+    text-align: left;
+}
+.social-icons{
+    text-align: left;
+}
+.info-box p{
+    text-align: left;
 }
 .down-head{
     color: black;
     font-size: 18px ;
+    text-align: left;
 }
 .restro-cards a{
     text-decoration: none;
     color: black;
 }
-@media (max-width: 600px) {
-
-    /* Keep logo left & login right */
-    .nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-    }
-
-    /* Hide Home section */
-    .home {
-        display: none;
-    }
-
-    /* Adjust logo size */
-    .logo {
-        width: 150px;
-        height: 120px;
-    }
-
-    /* Adjust login button */
-    .nav-btn {
-        padding: 6px 16px;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* ============Main back============= */
-    .banner-section{
-        flex-direction: column;
-        height: 550px;
-    }
-    .front-description {
-        font-size: 18px;
-        text-align: center;
-        margin-left: 50px;
-    }
-    .front-content{
-        margin-left: 140px;
-        padding-right: 50px;
-    }
-    .main-background{
-        width: 100%;
-        height: 550px;
-        background-image: url("/img/frontbackgroundmediaquery.jpg");
-        position: absolute;
-    }
-
-    /* ==============Restaurant cards=============== */
-    .restro-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    /* ===============About section============= */
-    .about-page{
-        position: relative;
-    }
-
-    .about-img{
-        width: 100%;
-        height: 300px;   /* adjust height for phone */
-        margin: 0;
-        object-fit: cover;
-    }
-
-    .black-shadow{
-        width: 100%;
-        height: 300px;
-        margin: 0;
-    }
-
-    .aboutus{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 90%;
-        text-align: center;
-        color: white;
-    }
-
-    .about-head{
-        font-size: 22px;
-    }
-
-    .about-desc{
-        font-size: 12px;
-        width: auto;
-    }
-
-    .about-btn{
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 8px 18px;
-        font-size: 12px;
-    }
-}
-    /*============== Footer=============== */
-    .down-section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .info-box{
-        margin-left: 90px;
-    }
 
 /* ===================Second Product Page Start================== */
 .product-search{
@@ -580,176 +472,14 @@
     margin-bottom: 15px;
 }
 .downpage2{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
     width: 100%;
     margin-top: 50px;
     position: absolute;
     top: 1550px;
-}
-/* ================= MOBILE ================= */
-@media (max-width: 600px) {
-
-    /* ===== HEADER ===== */
-    .nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-    }
-
-    /* Hide Home section */
-    .head-search {
-        display: none;
-    }
-    .head-icons{
-        display: none;
-    }
-
-    /* Adjust logo size */
-    .logo {
-        width: 150px;
-        height: 120px;
-    }
-
-    /* Adjust login button */
-    .nav-btn {
-        padding: 6px 16px;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* ===== TOP RESTAURANT BANNER ===== */
-
-    .second-background {
-        width: 100%;
-        height: 330px;
-        object-fit: cover;
-    }
-    .black-container{
-        width: 100%;
-    }
-    .top-heading{
-        padding-left: 15px;
-    }
-    .firelogo {
-        width: 80px;
-    }
-    .restro-heading {
-        font-size: 18px;
-    }
-    .order-detail {
-        font-size: 14px;
-    }
-
-    /* ===== SECOND NAV ===== */
-
-    .menu-bar {
-        justify-content: space-around;
-        margin-top: 10px;
-    }
-    .line{
-        margin-bottom: 0px;
-    }
-    .name{
-        font-size: 17px; 
-    }
-    .slideline{
-        display: none;
-    }
-    .heart {
-        display: none;
-    }
-
-    /* ===== SIDEBAR ===== */
-    .sidebar {
-        display: none;   
-    }
-
-    /* ===== SEARCH FOOD ===== */
-
-    .product {
-        width: 95%;
-        margin: 10px auto;
-        position: absolute;
-        left: 15px;
-    }
-
-    .dish-search {
-        width: 80%;
-        padding: 10px;
-        margin-bottom: 0;
-        margin-left: 8px;
-    }
-
-    /* ===== PIZZA CARDS ===== */
-    .pizz-cards{
-        margin-left: 0px;
-    }
-    .pizz-heading {
-        font-size: 18px;
-        text-align: center;
-        margin-top: 10px;
-        width: 430px;
-        margin-bottom: 20px;
-    }
-
-    .firepizz-card {
-        height: 290px;
-        width: 300px;
-        margin: 15px auto;
-        display: block;
-    }
-
-    .pizz-img {
-        width: 100%;
-        height: 180px;
-        margin: 0px;
-    }
-    .card-spacer{
-        display: none;
-    }
-    .card-price{
-        display: none;
-    }
-    .card-heading {
-        font-size: 16px;
-    }
-
-    .card-detail {
-        font-size: 13px;
-    }
-
-    .addtobag {
-        width: 80%;
-        padding: 10px;
-        font-size: 14px;
-        margin: 10px 0 10px 30px;
-    }
-
-    /* ===== BAG ===== */
-    .bag {
-        display: none;   /* hide cart sidebar */
-    }
-
-    /* ===== FOOTER ===== */
-    .downpage2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        top: 1590px;
-    }
-
-    .info-box {
-        margin-bottom: 20px;
-        padding-right: 50px;
-    }
-
-
+    gap: 40px;
+    padding-left: 90px;
 }
 
 /* =========================login page start======================== */
@@ -858,33 +588,7 @@
     font-size:14px;
     cursor:pointer;
 }
-/* ===== Mobile ===== */
-@media (max-width: 768px) {
 
-    .login{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .left-section{
-        display: none
-    }
-
-    .right-section{
-        margin-left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .login-box{
-        width: 90%;
-        padding: 30px 20px;
-    }
-}
 
 
 
