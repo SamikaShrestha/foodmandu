@@ -102,9 +102,9 @@ body{
     margin-top: 50px;
 }
 .sec-describe{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
-    margin-left: 80px;
+    text-align: center;
 }
 .restro-cards{
     display: grid;
@@ -194,10 +194,6 @@ body{
     height: 40px;
     padding: 0 25px;
     border: none;
-}
-.about-btn:hover {
-    transform: scale(1.15);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 .down-section{
     display: flex;
@@ -512,6 +508,7 @@ body{
 }
 .burger-img:hover{
     transform: scale(1.08);
+    transition-duration: 3s;
 }
 .craving{
     text-align: center;
@@ -582,6 +579,7 @@ body{
 .login-btn:hover{
     background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
     color: black;
+    transition-duration: 3s;
 }
 .forgot{
     text-align:center;
