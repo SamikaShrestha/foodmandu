@@ -348,6 +348,9 @@ body{
     left: 300px;
     top: 500px;
 }
+.custom-dropdown {
+    display: none;
+}
 .product{
     display: flex;
     position: absolute;

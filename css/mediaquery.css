@@ -225,6 +225,59 @@
         margin-left: 8px;
     }
 
+    .sidebar {
+        display: none;
+    }
+
+    .custom-dropdown {
+        display: block;
+        position: absolute;
+        top: 465px;
+        left: 25px;
+        width: 380px;
+        z-index: 10;
+        font-family: sans-serif;
+    }
+
+    .dropdown-btn {
+        background: white;
+        border: 1px solid black;
+        padding: 8px 10px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .dropdown-list {
+        display: none;
+        position: absolute;
+        width: 200px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-top: 5px;
+        list-style: none;
+        padding: 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-list li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .dropdown-list li:hover {
+        background-color: #f2f2f2;
+    }
+
+    .custom-dropdown.active .dropdown-list {
+        display: block;
+    }
+
+    .product {
+        top: 505px;
+        left: 15px;
+    }
+
     /* ===== PIZZA CARDS ===== */
     .pizz-cards{
         margin-left: 0px;
@@ -332,4 +385,9 @@
         width: 90%;
         padding: 30px 20px;
     }
-}
+    .login-btn:hover{
+    background: linear-gradient(to right,var(--primary-yellow),var(--primary-orange));
+    color: black;
+    transition-duration: 3s;
+    }
+}    
