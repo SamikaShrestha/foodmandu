@@ -62,6 +62,7 @@ body{
 .nav-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: all 0.1s ease;
 }
 .banner-section {
     position: relative;
@@ -364,6 +365,7 @@ body{
     height: 35px ;
     width: 600px;
     padding: 0 10px;
+    outline: none;
 }
 .search-sqbtn{
     height: 35px;
@@ -442,6 +444,7 @@ body{
 .addtobag:hover{
     transform: scale(1.07);
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 .bag{
     position: absolute;

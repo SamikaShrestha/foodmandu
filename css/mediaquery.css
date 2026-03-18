@@ -51,6 +51,7 @@
     /* ==============Restaurant cards=============== */
     .restro-cards {
         grid-template-columns: 1fr;
+        margin-left: 40px;
     }
 
     .card {
