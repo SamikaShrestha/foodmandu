@@ -31,7 +31,7 @@ Features:
 
 3. Mobile Responsive Design
 
-* Sidebar converts into a **custom dropdown menu** on mobile
+* Sidebar converts into a dropdown menu on mobile
 * Clean layout for small screens
 * Improved user experience
 
@@ -71,9 +71,9 @@ What I Learned:
 Future Improvements:
 
 * Add backend (PHP/MySQL)
-* User login & authentication
+* AI based recomendation system
 * Real add-to-cart functionality
-* Online payment integration
+* Online payment feature
 * Order tracking system
 
 Conclusion:
